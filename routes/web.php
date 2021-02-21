@@ -33,11 +33,11 @@ use App\Http\Controllers\ProductController;
 // });
 
 // Praktikum 2
-// Route::get('/', [PageController::class, 'index']  );
+Route::get('/', [HomeController::class, 'index']  );
 
-// Route::get('/about', [PageController::class, 'about']  );
+Route::get('/about', [AboutController::class, 'about']  );
 
-// Route::get('/articles/{id}', [PageController::class, 'articles'] );
+Route::get('/articles/{id}', [ArticlesController::class, 'articles'] );
 
 // Praktikum 3
 Route::get('/home', [ProductController::class, 'home']);

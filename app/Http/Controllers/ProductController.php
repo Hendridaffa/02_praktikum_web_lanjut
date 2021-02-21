@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function home(){
-        return '<a href="https://www.educastudio.com/about-us">https://www.educastudio.com/about-us</a>';
+        return '<a href="https://www.educastudio.com/">https://www.educastudio.com/</a>';
     }
     public function product($id){
         return '<a href="https://www.educastudio.com/category/'.$id.'">https://www.educastudio.com/category/'.$id.'</a>';
@@ -19,6 +19,6 @@ class ProductController extends Controller
         return '<a href="https://www.educastudio.com/program/'.$id.'">https://www.educastudio.com/program/'.$id.'</a>';
     }
     public function us(){
-        return '<a href="https://www.educastudio.com/contact-us/'.$id.'">https://www.educastudio.com/contact-us/'.$id.'</a>';
+        return '<a href="https://www.educastudio.com/contact-us">https://www.educastudio.com/contact-us</a>';
     }
 }
