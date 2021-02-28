@@ -8,7 +8,13 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                <p class="h2">Halaman Home</p> <a href='https://www.educastudio.com/'><button>KLIK!</button></a>
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>

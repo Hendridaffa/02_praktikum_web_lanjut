@@ -6,19 +6,24 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function home(){
-        return '<a href="https://www.educastudio.com/">https://www.educastudio.com/</a>';
+    public function edugames(){
+        return view('product')
+                    ->with('page', 'Marbel Edu Games')
+                    ->with('url','https://www.educastudio.com/category/marbel-edu-games');
     }
-    public function product($id){
-        return '<a href="https://www.educastudio.com/category/'.$id.'">https://www.educastudio.com/category/'.$id.'</a>';
+    public function friendskidsgames(){
+        return view('product')
+                    ->with('page', 'Marbel and Friends')
+                    ->with('url','https://www.educastudio.com/category/marbel-and-friends-kids-games');
     }
-    public function news($id){
-        return '<a href="https://www.educastudio.com/news/'.$id.'">https://www.educastudio.com/news/'.$id.'</a>';
+    public function riristorybooks(){
+        return view('product')
+                    ->with('page', 'Riri Story Books')
+                    ->with('url','https://www.educastudio.com/category/riri-story-books');
     }
-    public function program($id){
-        return '<a href="https://www.educastudio.com/program/'.$id.'">https://www.educastudio.com/program/'.$id.'</a>';
-    }
-    public function us(){
-        return '<a href="https://www.educastudio.com/contact-us">https://www.educastudio.com/contact-us</a>';
+    public function kolakkidssongs(){
+        return view('product')
+                    ->with('page', 'Kolak Kids Songs')
+                    ->with('url','https://www.educastudio.com/category/kolak-kids-songs');
     }
 }
